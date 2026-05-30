@@ -1,5 +1,5 @@
 node_modules
-# Downloads (generated files)
 backend/downloads/
+backend/media/
 *.mp4
 *.mp3
