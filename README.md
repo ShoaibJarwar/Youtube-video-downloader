@@ -75,7 +75,7 @@ ytdl/
 
 | Home | History | Settings |
 |------|---------|----------|
-| ![Home](./frontend/Images/HomeScreen.png) | ![History](./frontend/Images/HistoryScreen.png) | ![Settings](./frontend/Images/SettingsScreen.png) |
+| ![Home](./Images/HomeScreen.png) | ![History](./Images/HistoryScreen.png) | ![Settings](./Images/SettingsScreen.png) |
 
 ---
 
