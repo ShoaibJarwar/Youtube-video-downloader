@@ -1,0 +1,30 @@
+version: '3.9'
+
+services:
+  backend:
+    build: ./backend
+    container_name: ytvault-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - downloads_data:/app/downloads
+      - media_data:/app/media
+    environment:
+      - DEBUG=True
+      - SECRET_KEY=change-this-in-production
+      - ALLOWED_HOSTS=localhost,127.0.0.1,backend
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    container_name: ytvault-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  downloads_data:
+  media_data:
